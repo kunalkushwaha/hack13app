@@ -3,5 +3,11 @@
  */
 
 exports.search = function(req, res){
-  res.render('search', { title: 'Search Result' });
+  
+ /* var url = require('url');
+  var url_parts = url.parse(request.url, true);
+  var query = url_parts.query;
+  var SearchData = query;
+  console.log(query);*/
+  res.render('search', { SearchData: "Hellodsjfbskdnfk " });
 };
