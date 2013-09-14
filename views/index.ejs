@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hack13App - Twitter analytics to know more about technology usage</title>
+    <title><%= title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
@@ -38,22 +38,24 @@
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="/">Home</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="#">About</a></li>
           <li><a href="#">Help</a></li> 
         </ul>
       </div><!-- /.navbar-collapse -->
     </nav>
     
-    
+    <style type="text/css">
+      body { background: #B8B8B8; }
+    </style>
     
     <div class="container-fluid">
-      <div class="col-lg-6 well" style="margin-top:10%; margin-left:20%">
-        <form method="get" action="/" class="form-inline" >
-        <div class="input-group">
+      <div class="col-lg-6 well " style="margin-top:10%; margin-left:23%; background: #006699;">
+        <form method="post" action="/search" class="form-inline" >
+        <div class="input-group well">
           
           <input name="tech" class="form-control input-lg" type="text"  placeholder="Keywords: OpenStack, LXC Con" >
           <span class="input-group-btn">
-            <button type="submit" class="input-group-btn btn "> <i class="glyphicon  glyphicon glyphicon-search glyphicon-white"></i></button>
+            <button type="submit" class="input-group-btn btn btn-lg  "> <i class="glyphicon  glyphicon glyphicon-search glyphicon-white"></i></button>
           </span>
         </div>
         <div class="line" style="margin-top:2%">
