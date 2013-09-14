@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Hack13App - Twitter analytics to know more about technology usage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    
+    <!-- HTML5 shim for IE backwards compatibility -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    
+    <nav class="navbar navbar-inverse navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Hack13App</a>
+      </div>
+    
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Help</a></li> 
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+    
+    
+    
+    <div class="container-fluid">
+      <div class="col-lg-6 well" style="margin-top:10%; margin-left:20%">
+        <form method="get" action="/" class="form-inline" >
+        <div class="input-group">
+          
+          <input name="tech" class="form-control input-lg" type="text"  placeholder="Keywords: OpenStack, LXC Con" >
+          <span class="input-group-btn">
+            <button type="submit" class="input-group-btn btn "> <i class="glyphicon  glyphicon glyphicon-search glyphicon-white"></i></button>
+          </span>
+        </div>
+        <div class="line">
+          <input name="loc" class="form-control input-lg" type="text"  placeholder="Location: City, Country">
+        </div>
+        </form>
+      </div>
+    </div>
+    
+    
+    
+
+    
+  
+
   </body>
 </html>
