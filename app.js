@@ -5,9 +5,12 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , user = require('./routes/user')
+ // , user = require('./routes/user')
   , http = require('http')
   , path = require('path');
+
+var search = require('./routes/search.js')
+
 
 var app = express();
 
@@ -28,7 +31,13 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+
+app.get('/search', routes.search);
+app.get("*", function(request, response) {
+  response.body("<h1>No found!!!!!!!!!!!</h1>")
+  response.end("404!");
+});
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
